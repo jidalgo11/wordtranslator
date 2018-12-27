@@ -1,0 +1,20 @@
+.search-field .control:first-child {
+    width: 75%;
+}
+
+.search-field .control:last-child {
+    width: 25%;
+}
+
+.notification {
+    opacity: 0;
+}
+
+.notification.active {
+    transition: opacity .35s ease;
+    opacity: 1;
+}
+
+.subtitle span {
+    text-transform: capitalize;
+}

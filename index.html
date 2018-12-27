@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Translate Note Taker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title is-1">Notes for Translating</h1>
+        <div class="columns">
+            <div class="column is-7">
+                <textarea id="textarea" class="textarea has-fixed-size" placeholder="Type notes here..." rows="16"></textarea>
+            </div>
+            <div class="column is-5">
+                <div class="field has-addons search-field">
+                    <div class="control">
+                        <input id="text" class="input" type="text" placeholder="Translate word...">
+                    </div>
+                    <div class="control">
+                        <a id="translate-button" class="button is-info">
+                            Translate Word
+                        </a>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child" id="results">
+                        
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="columns">
+            <div class="column">
+                <button id="clear-button" class="button has-background-info has-text-white">Clear Notes</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
